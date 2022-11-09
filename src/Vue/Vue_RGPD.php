@@ -83,7 +83,18 @@ De nouvelles exigences légales sont imposées par le Règlement Européen gén�
 Notre collaboration et son processus d’intégration nous conduit à vous demander un certain nombre d’éléments que nous vous serions reconnaissants de nous communiquer, dès que possible, sur votre niveau de sécurité, le mode de stockage et de traitement… Dans ce but, vous pourrez compléter les réponses apportées par toute pièce justificative que vous jugerez utile nous précisant les mesures que vous avez mises en place ou que vous envisagez de mettre en œuvre afin d’assurer la mise en conformité de votre établissement.
 
 Pour plus de précisions, il vous est possible de contacter le Responsable du traitement, [nom du responsable et/ou du service] ou notre DPO (si nommé).
+    
+    <form action='index.php' method='post'>  
+        <button type='submit' name='accepter' value='accepter'>
+              Accepter
+        </button>
+        <button type='submit' name='refuser' value='refuser'>
+              Refuser
+        </button>
+    </form>
                 ";
+
+
         return $str;
     }
 }

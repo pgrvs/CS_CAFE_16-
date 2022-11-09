@@ -10,6 +10,10 @@ switch ($action) {
     case "AccepterRGPD":
         break;
     case "RefuserRGPD":
+        session_destroy();
+        unset($_SESSION);
+        $Vue->setEntete(new Vue_Structure_Entete());
+        $Vue->addToCorps(new Vue_Connexion_Formulaire_client());
         break;
 
     case "AfficherRGPD":
